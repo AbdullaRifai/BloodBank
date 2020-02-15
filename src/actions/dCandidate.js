@@ -7,10 +7,11 @@ export const ACTIONS_TYPES = {
   DELETE: "DELETE"
 };
 
-export const fetch_all = () => {
+export const fetchAll = () => {
   return dispatch => {
     api
       .dCandidate()
+      .fetchAll()
       .then(response => {
         dispatch({
           type: ACTIONS_TYPES.FETCH_ALL,
