@@ -1,25 +1,17 @@
 import React from 'react';
 import './Header.scss';
-import {Nav, Col, Row, Container} from 'react-bootstrap';
+import {Navbar, Nav, Button, Form, FormControl} from 'react-bootstrap';
 
 const Header = () => {
     return (
         <div>
-    <Nav defaultActiveKey="/home" className="justify-content-end" as="ul">
-        <Container>
-            <Col>
-                <Row>
-                    <Nav.Link href="/home">Active</Nav.Link>
-                </Row>
-                <Row>
-                    <Nav.Link eventKey="link-1">Link</Nav.Link>
-                </Row>
-                <Row>
-                    <Nav.Link eventKey="link-2">Link</Nav.Link>
-                </Row>
-            </Col>
-        </Container>
-    </Nav> 
+   <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="#home">BloodBank</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+    </Nav>
+    <Nav.Link> About us </Nav.Link>
+  </Navbar>
         </div>
     )
 }
