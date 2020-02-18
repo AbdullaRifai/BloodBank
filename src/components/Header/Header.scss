@@ -1,0 +1,21 @@
+//These colors complement each other (According to some googling I did on complementary colors, And are as far from red (color of danger and blood) as possible.
+$colors: (
+    primary: #005DFF,
+    accent: #FFF6BB
+);  
+
+
+@function color($color-name) {
+    @return map-get($color-name);
+}
+
+/*Add background image tommorow using the same concept! */
+.main {
+    box-shadow: 20px 10px 80px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .nav-link {
+      text-transform: uppercase;
+  } 
